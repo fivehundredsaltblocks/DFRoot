@@ -187,7 +187,7 @@ int main(void)
     touch("/dev/dfm5");
     char **late_load;
     if (soft_reboot)
-        late_load = (char *[]){ KSUD, "late-load", "--package-name", su_manager, "--soft-reboot", NULL };
+        late_load = (char *[]){ KSUD, "soft-reboot", NULL };
     else
         late_load = (char *[]){ KSUD, "late-load", "--package-name", su_manager, NULL };
     if (run(late_load) == 0)
