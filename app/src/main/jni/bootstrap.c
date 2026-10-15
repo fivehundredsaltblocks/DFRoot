@@ -24,6 +24,7 @@ static int pref_true(const char *buf, const char *key)
     return v && tag_end && v < tag_end;
 }
 
+
 static int read_prefs(char *su_manager, size_t su_manager_size, int *soft_reboot,
                       int *disable_modules)
 {
